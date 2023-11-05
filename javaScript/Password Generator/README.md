@@ -8,7 +8,7 @@ Create strong and unique passwords with ease using this Random Password Generato
 
 Say goodbye to weak passwords and boost your online security with this handy tool.
 
-![Random Password Generator Screenshot](screenshot.png)
+![Random Password Generator Screenshot](Screenshot.png)
 
 ### How to Use
 1. Clone the repository or download the files.

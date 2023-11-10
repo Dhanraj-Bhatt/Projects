@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body{
+	width: 100%;
+	height: 100%;
+	/* Add your background pattern here */
+	background-color: #e5e5f7;
+	background-image: radial-gradient(#444cf7 10%, transparent 10%),radial-gradient(#444cf7 10%, transparent 10%);
+	background-size: 100px 100px;
+	background-position: 0 0, 50px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+  }
+.container {
+	width: 450px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.container h2 {
+	font-weight: 600;
+	font-size: 25px;
+	padding: 20px 25px;
+	border-bottom: 1px solid #d4dbe5;
+}
+.card{
+	margin: 18px 25px;
+}
+.card .input-box{
+	position: relative;
+}
+.input-box input {
+	width: 100%;
+	height: 53px;
+	color: #000;
+	background: none;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 4px;
+	letter-spacing: 1.4px;
+	border: 1px solid #aaa;
+	padding: 10px;
+}
+.input-box span{
+	position: absolute;
+	right: 13px;
+	cursor: pointer;
+	line-height: 53px;
+	color: #707070;
+  }
+.input-box span:hover{
+	color: #4285F4!important;
+}
+.card .pass-indicator {
+	width: 100%;
+	height: 4px;
+	margin: 15px 0;
+	position: relative;
+	background: #dfdfdf;
+	margin-top: 10px;
+	border-radius: 25px;
+}
+.pass-indicator::before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	border-radius: inherit;
+	transition: width 0.3s ease;
+}
+.pass-indicator#weak::before{
+	width: 20%;
+	background: #E64A4A;
+}
+.pass-indicator#medium::before{
+	width: 50%;
+	background: #ffd000;
+}.pass-indicator#strong::before{
+	width: 100%;
+	background: #00f92e;
+}
+.card .pass-length{
+	margin: 12px 0 15px;
+}
+.pass-length .details{
+	display: flex;
+	justify-content: space-between;
+}
+.pass-length input{
+	width: 100%;
+	height: 5px;
+}
+.pass-settings .options{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+.pass-settings .options .option{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	width: calc(100%/2);
+}
+.options .option:first-child{
+	pointer-events: none;
+}
+.options .option:first-child input{
+	opacity: 0.7;
+}
+.options .option input{
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+.options .option label{
+	cursor: pointer;
+	color: #4f4f4f;
+	padding-left: 10px;
+}
+.card .generate-btn{
+	width: 100%;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #4285F4;
+	font-size: 20px;
+	padding: 10px 0;
+	border-radius: 5px;
+	margin: 10px 0 15px;
+}

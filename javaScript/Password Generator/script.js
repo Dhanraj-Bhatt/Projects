@@ -1,5 +1,5 @@
 const passwordBox = document.getElementById('passwordi');
-const length = 12;
+const length = 13;
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
